@@ -37,7 +37,7 @@ PlotCube <- function (object,
     if (length(object@origin) == 0) {
         stop('Specify origin for the object')
     }
-    axes3d()
+
     origin <- object@origin
     length <- object@length
     height <- object@height
