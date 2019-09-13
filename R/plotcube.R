@@ -72,7 +72,7 @@ PlotCube <- function (object,
         cube_color <- 'black'
     } else {
         # randomly select color for cube
-        colors <- c('blue', 'red', 'brown','black')
+        colors <- c('green', 'red', 'yellow','orange')
         cube_color <- sample(colors, 1)
     }
 
