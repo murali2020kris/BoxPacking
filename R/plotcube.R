@@ -8,8 +8,12 @@ RGLInit <- function(new.device = FALSE, width = 500) {
         rgl.open()
         par3d(windowRect = 50 + c(0, 0, width, width))
         rgl.bg(color = "white")
+        text3d(0, 0, 0, text = "Sams Order = 2460165989", color = "blue")
+        rgl.bbox(color = c("#333377", "black"), emission = "#333377",
+                 specular = "#3333FF", shininess = 5, alpha = 0.8)
+#        axes3d(c('x', 'y', 'z'))
     }
-    rgl.viewpoint(theta = 40, phi = 20)
+    rgl.viewpoint(theta = -120, phi = 20)
 }
 
 #' Plot 3D cube
